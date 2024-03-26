@@ -6,9 +6,9 @@ const Todos = () => {
   const todos = useSelector(state=>state.todos)
   const dispatch =useDispatch()
   return (
-    <div className='flex justify-center mt-4 min-w-[70%]'>
+    <div className='flex justify-center mt-4 min-w-[80%]'>
     
-    <ul className='list-none w-[90%]'>
+    <ul className='list-none min-w-[71.5%]'>
     {todos.map((todo)=>(
         <li key={todo.id} className='mt-4 flex justify-between items-center bg-zinc-800 px-4 py-2 rounded'>
             <div className='text-white'>{todo.text}</div>
